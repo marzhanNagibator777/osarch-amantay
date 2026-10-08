@@ -1,3 +1,4 @@
+# LAB 0
 | What | Value | Where I got it |
 | :--- | :--- | :--- |
 | **CPU Model** | Intel(R) N100 | `Get-CimInstance Win32_Processor` |
@@ -10,4 +11,4 @@
 | **Virtualization** | False | `Get-CimInstance Win32_Processor` |
  
 ## What did not work
-All commands executed successfully on Windows PowerShell.
+All commands executed successfully on Windows Powershell

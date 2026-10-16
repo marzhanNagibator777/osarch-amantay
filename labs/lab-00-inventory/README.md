@@ -1,4 +1,4 @@
-# LAB 0
+# LAB 00
 | What | Value | Where I got it |
 | :--- | :--- | :--- |
 | **CPU Model** | Intel(R) N100 | `Get-CimInstance Win32_Processor` |

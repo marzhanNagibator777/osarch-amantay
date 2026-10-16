@@ -1,0 +1,6 @@
+﻿
+Name          NumberOfCores NumberOfLogicalProcessors
+----          ------------- -------------------------
+Intel(R) N100             4                         4
+
+

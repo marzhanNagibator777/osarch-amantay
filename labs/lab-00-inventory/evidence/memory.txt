@@ -1,0 +1,6 @@
+﻿
+  Capacity Speed DeviceLocator              Manufacturer
+  -------- ----- -------------              ------------
+8589934592  5600 Controller0-ChannelA-DIMM0 Samsung     
+
+

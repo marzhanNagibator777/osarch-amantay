@@ -1,20 +1,3 @@
-﻿
-FriendlyName            MediaType BusType
-------------            --------- -------
-SKHynix_HFS256GEM9X169N SSD       NVMe   
-
-
-
-DriveLetter FileSystemLabel SizeRemaining         Size
------------ --------------- -------------         ----
-                                120229888    947908608
-C                            220223721472 254883655680
-
-
-
-DriveLetter FileSystemLabel SizeRemaining         Size
------------ --------------- -------------         ----
-                                120229888    947908608
-C                            220223717376 254883655680
-
-
+Model                            MediaType
+-----                            ---------
+WDC PC SN530 SDBPNPZ-256G-1002 SSD

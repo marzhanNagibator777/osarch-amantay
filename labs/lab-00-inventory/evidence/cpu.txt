@@ -1,6 +1,3 @@
-﻿
-Name          NumberOfCores NumberOfLogicalProcessors
-----          ------------- -------------------------
-Intel Core i3             4                         4
-
-
+Name                                        NumberOfCores NumberOfLogicalProcessors
+----                                        ------------- -------------------------
+11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz          2                         4

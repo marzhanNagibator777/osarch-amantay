@@ -1,6 +1,6 @@
 # Lab 03: Teardown without a screwdriver
 
-Machine: ASUS VivoBook 15 X515EA (Host), Ubuntu Server 26.04 VM (Guest)  
+Machine: ASUS VivoBook 15 X515EA (Host), Ubuntu Server 24.04 VM (Guest)
 
 ---
 
@@ -24,7 +24,7 @@ Machine: ASUS VivoBook 15 X515EA (Host), Ubuntu Server 26.04 VM (Guest)
 
 Below is the internal architectural layout of the ASUS VivoBook 15 X515EA system board:
 
-![ASUS VivoBook 15 X515EA Internal Layout](evidence/manual-figures/asus-x515ea-internal.png)
+![ASUS VivoBook 15 X515EA Internal Layout](evidence/manual-figures/asus-x515ea-internal.jpg)
 
 1. **CPU (Central Processing Unit):**
    * **What:** Intel Core i3-1115G4 (Tiger Lake), 2 physical cores / 4 threads, 3.00 GHz base clock, integrated under the unified heatsink.
@@ -104,4 +104,4 @@ Below is the internal architectural layout of the ASUS VivoBook 15 X515EA system
 
 * [evidence/windows-specs.txt](evidence/windows-specs.txt) — Raw PowerShell transcript verifying physical hardware specifications of the ASUS VivoBook 15 host.
 * [evidence/linux-specs.txt](evidence/linux-specs.txt) — Raw Linux command log verifying CPU, memory, and virtual storage abstraction in the Ubuntu guest.
-* [evidence/manual-figures/asus-x515ea-internal.png](evidence/manual-figures/asus-x515ea-internal.png) — Annotated internal layout diagram identifying seven key motherboard components with connections and limitations.
+* [evidence/manual-figures/asus-x515ea-internal.jpg](evidence/manual-figures/asus-x515ea-internal.jpg) — Annotated internal layout diagram identifying seven key motherboard components with connections and limitations.

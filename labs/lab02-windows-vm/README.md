@@ -1,7 +1,5 @@
 # Lab 02: A Windows guest, and a network between them
-
 ---
-
 ## What I did
 
 1. **Provisioned Windows 11 Guest VM:**

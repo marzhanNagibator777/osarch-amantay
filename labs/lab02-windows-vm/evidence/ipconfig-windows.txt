@@ -1,0 +1,28 @@
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-5R7DG2G
+   Primary Dns Suffix  . . . . . . . :
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . : localdomain
+   Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+   Physical Address. . . . . . . . . : 00-0C-29-A8-51-52
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::4537:fcda:4fbb:14b%6(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.140.132(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Sunday, November 1, 2026 4:02:49 PM
+   Lease Expires . . . . . . . . . . : Sunday, November 1, 2026 4:32:49 PM
+   Default Gateway . . . . . . . . . : 192.168.140.2
+   DHCP Server . . . . . . . . . . . : 192.168.140.254
+   DHCPv6 IAID . . . . . . . . . . . : 67111977
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-32-71-ED-51-00-0C-29-A8-51-52
+   DNS Servers . . . . . . . . . . . : 192.168.140.2
+   Primary WINS Server . . . . . . . : 192.168.140.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+PS C:\Users\marzhan>

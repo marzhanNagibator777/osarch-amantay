@@ -1,0 +1,87 @@
+**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20261101165149
+Имя пользователя: SHAITAN-MASHINA\Админ
+Запуск от имени пользователя: SHAITAN-MASHINA\Админ
+Имя конфигурации: 
+Компьютер: SHAITAN-MASHINA (Microsoft Windows NT 10.0.26200.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ИД процесса: 4644
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Транскрибирование запущено, выходной файл C:\Users\Админ\Desktop\windows-specs.txt
+
+
+Name    : VivoBook_ASUSLaptop X515EA_X515EA
+Version : 1.0
+Vendor  : ASUSTeK COMPUTER INC.
+
+
+
+
+
+Manufacturer              : ASUSTeK COMPUTER INC.
+Model                     : VivoBook_ASUSLaptop X515EA_X515EA
+TotalPhysicalMemory       : 8269565952
+NumberOfProcessors        : 1
+NumberOfLogicalProcessors : 4
+
+
+
+
+
+Name                      : 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+NumberOfCores             : 2
+NumberOfLogicalProcessors : 4
+MaxClockSpeed             : 2995
+L2CacheSize               : 2560
+L3CacheSize               : 6144
+SocketDesignation         : U3E1
+
+
+
+
+
+MemoryDevices : 2
+MaxCapacity   : 67108864
+
+
+
+
+
+DeviceLocator : Controller0-ChannelA
+Capacity      : 8589934592
+FormFactor    : 12
+Speed         : 3200
+Manufacturer  : Micron Technology
+PartNumber    : 4ATF1G64HZ-3G2E1
+
+
+
+
+
+FriendlyName : NVMe WDC PC SN530 SDBPNPZ-256G-1002
+MediaType    : SSD
+BusType      : RAID
+Size         : 256060514304
+
+
+
+
+
+Manufacturer : ASUSTeK COMPUTER INC.
+Product      : X515EA
+
+
+
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261101165155
+**********************

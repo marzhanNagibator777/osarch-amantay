@@ -1,53 +1,96 @@
-# Lab 02: Windows 11 Virtual Machine Deployment
+# Lab 02: A Windows guest, and a network between them
 
-## 1. Virtual Machine Specifications
-* **VM Name:** `lab02-win11`
-* **vCPU:** 2
-* **RAM:** 4096 MB (4.0 GB)
-* **Storage:** 64.0 GB NVMe (Single file, thin provisioned)
-* **Network Mode:** NAT (VMnet8)
-* **OS Edition:** Windows 11 Enterprise Evaluation (Build 26100, Version 24H2)
+Pair: Marzhan Amantay (individual submission)
+Machine: Windows 11 Home Host (8.0 GB RAM), VMware Workstation 17
+Date: 01.11.2026
 
 ---
 
-## 2. Host Memory Impact Analysis
-To evaluate the hypervisor memory footprint on the host system (8.0 GB physical RAM), measurements were captured via Task Manager:
+## What I did
 
-* **Host RAM before starting the VM:** 7.0 GB / 7.7 GB utilized (91%)  
-  ![Host Memory Before](evidence/host-memory-before.png)
+1. **Provisioned Windows 11 Guest VM:**
+   * Configured VM `lab02-win11` with 2 vCPUs, 4096 MB RAM, 64 GB NVMe virtual disk.
+   * Deployed Windows 11 Enterprise Evaluation (Build 26100, 24H2) using the classic setup engine and isolated local ISO.
+   * Installed VMware Tools for display auto-fitting and driver optimization.
 
-* **Host RAM after VM boot & runtime:** 7.3 GB / 7.7 GB utilized (95%, committed 18.2 GB)  
-  ![Host Memory After](evidence/host-memory-after.png)
+2. **Configured Isolated NAT Subnet:**
+   * Configured both `lab02-win11` and `Ubuntu Server Lab 1` virtual network adapters to **NAT** (`VMnet8`, `192.168.140.0/24`).
+
+3. **Configured Inbound Firewall Rule on Windows:**
+   * Enabled ICMP echo requests through Windows Defender Firewall without disabling protection:
+     ```cmd
+     netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo" protocol=icmpv4:8,any dir=in action=allow
+     ```
+
+4. **Verified Bidirectional Connectivity:**
+   * Exported Windows IP configuration to evidence:
+     ```cmd
+     ipconfig /all
+     ```
+   * Tested ICMP connectivity from Windows to Linux:
+     ```cmd
+     ping 192.168.140.131
+     ```
+   * Tested ICMP connectivity from Linux to Windows:
+     ```bash
+     ping -c 4 192.168.140.132
+     ```
+
+5. **Executed Host Memory Overcommitment Experiment:**
+   * Recorded baseline physical RAM consumption before launching virtual environments.
+   * Increased memory allocations on both guests to exceed physical host limits (8 GB host vs. combined VM load).
+   * Monitored host behavior under memory saturation via Task Manager.
 
 ---
 
-## 3. Network Configuration & Verification
-* **Windows VM IPv4:** `192.168.140.132` (verified via `ipconfig`)
-* **Linux Server VM IPv4 (Lab 01):** `192.168.140.131` (from `evidence/ip-addr-linux.txt`)
-* **Subnet:** `192.168.140.0/24` (Default Gateway: `192.168.140.2`)
-* **User & License Verification:** Licensed to `marzhan` (verified via `winver`)
+## Result
 
+### 1. Network Topology & Subnet Diagram
+```text
++-------------------------------------------------------------+
+| Host Machine (VMware Workstation NAT Gateway: 192.168.140.2)|
++-------------------------------------------------------------+
+               |                               |
+               v                               v
++-------------------------------+ +---------------------------+
+| Linux VM (Ubuntu Server CLI)  | | Windows 11 Enterprise VM  |
+| IP: 192.168.140.131           |<-> IP: 192.168.140.132      |
++-------------------------------+ +---------------------------+
+```
+
+* **Network Mode Rationale:** NAT mode was chosen instead of Bridged because campus and institutional Wi-Fi networks enforce strict MAC address filtering on physical access points. A bridged adapter requests a distinct physical MAC, causing silent packet drops by upstream switches. NAT transparently shares the host MAC and manages internal guest routing.
+* **Firewall Verdict:** Standard Windows installations silently discard ICMP packets. An explicit rule was added via `netsh` allowing ICMPv4 Type 8 traffic, maintaining security baseline while restoring diagnostic reachability.
+
+### 2. Host Memory Overcommitment Analysis
+* **Host RAM before starting VM:** 7.0 GB / 7.7 GB utilized (91%), commit limit 11.5 / 21.2 GB.
+* **Host RAM during concurrent execution:** 7.3 GB / 7.7 GB utilized (95%), total committed allocation surged to 18.2 GB / 21.9 GB.
+* **Host Reaction:** The host operating system prevented an out-of-memory kernel panic by aggressively paging inactive host processes to disk (`C:\pagefile.sys`), keeping physical utilization pegged at ~95% while swap activity spiked.
+
+### 3. System Verification
 ![Windows 11 Verification](evidence/win11-verification.png)
 
 ---
 
-## 4. What Did Not Work the First Time :( (Troubleshooting)
+## What did not work the first time
 
-### Problem Description
-The deployment failed repeatedly over the course of three days during the "Getting files ready for installation" stage, consistently crashing at exactly 76%:
-* Under the default setup interface, the installer terminated silently without a diagnostic code.
-* Switching to the classic setup engine revealed the exact fatal error: **`0x80070570`** (*"Windows cannot install required files. The file may be corrupt or missing"*).
+1. **Installation Crash at 76% (Error 0x80070570):**
+   * **Symptom:** The Windows installation repeatedly aborted at exactly 76% with error `0x80070570` ("Windows cannot install required files").
+   * **Root Cause:** Direct browser downloads over an unstable Wi-Fi connection corrupted internal blocks of the 8 GB `install.wim` image. Furthermore, storing the file inside an active OneDrive sync directory (`C:\Users\...\OneDrive\Рабочий стол\`) created filesystem lock contention during high-throughput decompression.
+   * **Resolution:** The ISO was relocated to a clean local root directory (`C:\iso\win11.iso`), the virtual NIC was disconnected during setup, and an intact ISO was verified and transferred via physical USB flash drive (`Диск 1 (D:) Сменный (USB)`). Setup was executed using the "Previous Version of Setup" engine.
 
-![Installation Error 0x80070570](evidence/error-0x80070570.png)
+2. **Initial Inbound Ping Rejection:**
+   * **Symptom:** Pinging from Ubuntu (`192.168.140.131`) to Windows (`192.168.140.132`) returned 100% packet loss despite working outbound internet access.
+   * **Root Cause:** Windows Defender Firewall Public/Private profile blocks unsolicited ICMPv4 Echo Requests by default.
+   * **Resolution:** Executed `netsh advfirewall` to add an inbound permit rule for `icmpv4:8` rather than dangerously turning the entire firewall off.
 
-### Root Cause Analysis & Diagnostic Process
-1. **Unstable Network & Incomplete WIM Container:** Due to high packet loss and connection drops on the local Wi-Fi, direct browser downloads of the massive 7–8 GB Enterprise ISO repeatedly dropped or silently corrupted blocks inside the compressed `install.wim` image. While the ISO file seemed complete on the surface, decompression consistently aborted at the corrupted 76% offset.
-2. **Path & Synchronization Conflicts:** The initial ISO was placed under an active Microsoft OneDrive synchronization directory containing Cyrillic characters (`C:\Users\Админ\OneDrive\Рабочий стол\iso\`). During heavy I/O operations at 76%, OneDrive attempted background file indexing, locking access to the virtual CD/DVD device.
-3. **VMware Setup Wizard Conflicts:** The experimental Windows 11 setup wizard frequently stalled when attempting simultaneous online updates and unattend checks over an active virtual network adapter.
+---
 
-### Resolution Steps
-1. **Path Normalization:** Created a clean root directory without Cyrillic letters or cloud synchronization hooks (`C:\iso\win11.iso`).
-2. **Network Isolation:** Temporarily disabled the virtual network adapter (`Connected` and `Connect at power on` unchecked) to prevent the setup wizard from attempting background patch downloads.
-3. **Engine Fallback:** Utilized the built-in **"Previous Version of Setup"** link to run the stable, classic Windows setup engine.
-4. **Physical Media Transfer:** Because local re-downloads over the unstable network continued to corrupt the 8 GB image, a verified, integral Windows 11 ISO was transferred offline via an external USB flash drive (visible as `Диск 1 (D:) Сменный (USB)` in the host hardware monitoring).
-5. **Finalization:** Once installed from the verified media, the VM booted successfully, the virtual network adapter was restored, and VMware Tools were installed for full display scaling.
+## Evidence
+
+* [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Proves Windows 11 guest network parameters (IPv4 `192.168.140.132`, Gateway `192.168.140.2`).
+* [evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt) — Proves Linux guest network configuration (IPv4 `192.168.140.131` on `ens33`).
+* [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — Proves bidirectional ICMP reachability (Windows to Linux and Linux to Windows) with 0% packet loss.
+* [evidence/host-memory-before.png](evidence/host-memory-before.png) — Proves host memory allocation prior to running virtual machines (7.0 GB / 91%).
+* [evidence/host-memory-after.png](evidence/host-memory-after.png) — Proves host memory saturation and commit footprint (7.3 GB / 95%, 18.2 GB committed) during hypervisor execution.
+* [evidence/win11-verification.png](evidence/win11-verification.png) — Proves successful guest provisioning with user `marzhan`, active NAT adapter, and VMware Tools.
+* [evidence/error-0x80070570.png](evidence/error-0x80070570.png) — Proves the encountered decompression failure at 76% for the troubleshooting record.

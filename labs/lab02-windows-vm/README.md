@@ -1,9 +1,5 @@
 # Lab 02: A Windows guest, and a network between them
 
-Pair: Marzhan Amantay (individual submission)
-Machine: Windows 11 Home Host (8.0 GB RAM), VMware Workstation 17
-Date: 01.11.2026
-
 ---
 
 ## What I did

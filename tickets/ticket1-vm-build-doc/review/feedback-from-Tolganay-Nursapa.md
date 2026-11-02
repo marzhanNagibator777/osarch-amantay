@@ -2,9 +2,8 @@
 
 * **Reviewer:** Tolganay Nursapa
 * **Author of BUILD.md:** Marzhan Amantay
-* **Host Platform tested on:** <Модель ноутбука партнера, например Lenovo IdeaPad 3 / Windows 11>
+* **Host Platform tested on:** asus B340
 * **Date:** 02.11.2026
-* **Verdict:** PASS (Reproduced successfully)
 
 ---
 

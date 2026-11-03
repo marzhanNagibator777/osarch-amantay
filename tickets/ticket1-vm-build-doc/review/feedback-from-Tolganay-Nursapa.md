@@ -1,6 +1,6 @@
 # Feedback on Marzhan Amantay's BUILD.md
 Reviewer: Tolganay Nursapa
-Commit reviewed: [<ссылка на пермалинк твоего коммита с BUILD.md>](https://github.com/marzhanNagibator777/osarch-amantay/blob/67114049c188f7e1635ff4f604f1b3d71e747c5a/tickets/ticket1-vm-build-doc/BUILD.md)
+Commit reviewed: [<link BUILD.md>](https://github.com/marzhanNagibator777/osarch-amantay/blob/67114049c188f7e1635ff4f604f1b3d71e747c5a/tickets/ticket1-vm-build-doc/BUILD.md)
 Hypervisor I used: VMware Workstation Pro, version 26H1 (or 17.x)
 
 ## First step where I got stuck

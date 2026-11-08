@@ -1,0 +1,52 @@
+Sun Nov  8 04:20:07 PM UTC 2026
+Personalities : [raid1] 
+md0 : active raid1 sdd1[2] sdb1[0]
+      2093056 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/1 pages [0KB], 65536KB chunk
+
+unused devices: <none>
+/dev/md0:
+           Version : 1.2
+     Creation Time : Sun Nov  8 15:50:43 2026
+        Raid Level : raid1
+        Array Size : 2093056 (2044.00 MiB 2143.29 MB)
+     Used Dev Size : 2093056 (2044.00 MiB 2143.29 MB)
+      Raid Devices : 2
+     Total Devices : 2
+       Persistence : Superblock is persistent
+
+     Intent Bitmap : Internal
+
+       Update Time : Sun Nov  8 16:19:25 2026
+             State : clean 
+    Active Devices : 2
+   Working Devices : 2
+    Failed Devices : 0
+     Spare Devices : 0
+
+Consistency Policy : bitmap
+
+              Name : marzhan:0  (local to host marzhan)
+              UUID : a368cdd5:30630cf6:2be584f7:116fcffc
+            Events : 50
+
+    Number   Major   Minor   RaidDevice State
+       0       8       17        0      active sync   /dev/sdb1
+       2       8       49        1      active sync   /dev/sdd1
+NAME     SIZE TYPE  FSTYPE            MOUNTPOINT
+loop0    1.5M loop  squashfs          /snap/hwctl/123
+loop1   66.8M loop  squashfs          /snap/core24/1643
+loop2   50.1M loop  squashfs          /snap/snapd/27710
+loop3    1.5M loop  squashfs          /snap/hwctl/131
+sda       20G disk                    
+├─sda1     1M part                    
+└─sda2    20G part  ext4              /
+sdb        2G disk                    
+└─sdb1     2G part  linux_raid_member 
+  └─md0    2G raid1 ext4              /mnt/mirror
+sdc        2G disk                    
+└─sdc1     2G part  linux_raid_member 
+sdd        2G disk                    
+└─sdd1     2G part  linux_raid_member 
+  └─md0    2G raid1 ext4              /mnt/mirror
+sr0      2.7G rom   iso9660           

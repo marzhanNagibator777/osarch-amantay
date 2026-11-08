@@ -1,0 +1,12 @@
+NAME    SIZE TYPE FSTYPE   MOUNTPOINT
+loop0   1.5M loop squashfs /snap/hwctl/123
+loop1  66.8M loop squashfs /snap/core24/1643
+loop2  50.1M loop squashfs /snap/snapd/27710
+loop3   1.5M loop squashfs /snap/hwctl/131
+sda      20G disk          
+├─sda1    1M part          
+└─sda2   20G part ext4     /
+sdb       2G disk          
+sdc       2G disk          
+sdd       2G disk          
+sr0     2.7G rom  iso9660  

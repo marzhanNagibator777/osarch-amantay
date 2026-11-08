@@ -1,8 +1,8 @@
 # Lab 4 — Partition, mirror, fail, recover
 
-**Pair:** Marzhan / PartnerName (или укажи себя)  
+**Pair:** Marzhan Amantay
 **Machine:** Host Windows 11 / Guest Ubuntu Server  
-**Date:** (поставь текущую дату)  
+**Date:** November 8, 2026  
 
 ## What I did
 

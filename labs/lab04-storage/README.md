@@ -56,10 +56,9 @@ During the setup, I encountered a host storage space limitation because the virt
 ---
 
 ## Evidence
-- [evidence/disk-windows.txt](./evidence/disk-windows.txt) — Windows disk and partition configuration.
-- [evidence/lsblk-before.txt](./evidence/lsblk-before.txt) — Initial Linux block devices layout.
 - [evidence/array-healthy.txt](./evidence/array-healthy.txt) — Healthy state of the RAID 1 array (`[UU]`).
-- [evidence/checksum-before.txt](./evidence/checksum-before.txt) — SHA-256 hashes of test files before failure.
 - [evidence/array-degraded.txt](./evidence/array-degraded.txt) — Degraded state of the array after failing one disk (`[U_]`).
-- [evidence/checksum-after-failure.txt](./evidence/checksum-after-failure.txt) — SHA-256 hashes verifying data survival after unmounting.
 - [evidence/array-rebuilt.txt](./evidence/array-rebuilt.txt) — Final rebuilt state of the array after adding the replacement disk.
+- [evidence/checksum-before.txt](./evidence/checksum-before.txt) — SHA-256 hashes of test files before failure.
+- [evidence/checksum-after-failure.txt](./evidence/checksum-after-failure.txt) — SHA-256 hashes verifying data survival after unmounting.
+- [evidence/lsblk-before.txt](./evidence/lsblk-before.txt) — Initial Linux block devices layout.

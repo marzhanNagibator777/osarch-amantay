@@ -33,3 +33,11 @@
 | designer | Case | 1stPlayer Firebase X2 | 22 000 | mechta.kz | 2026-11-10 |
 | designer | OS | Windows 11 Pro License | 65 000 | microsoft.com | 2026-11-10 |
 | designer | Monitor | 27" IPS Color-Calibrated Monitor | 115 000 | mechta.kz | 2026-11-10 |
+| **TOTAL** | **All items** | **33 components across 4 builds** | **1 873 000** | **-** | **2026-11-10** |
+
+### : Conclusion
+* **Accountant Build:** 346 000 KZT
+* **Sales Build:** 374 000 KZT
+* **Developer Build:** 513 000 KZT
+* **Designer Build:** 640 000 KZT
+* **Ovroll:** 1 873 000 KZT

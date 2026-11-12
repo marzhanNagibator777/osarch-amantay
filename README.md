@@ -14,7 +14,7 @@
 | **Lab 00** | Inventory your own machine | W1 | [`labs/lab-00-inventory/`](labs/lab-00-inventory/) | Completed |
 | **Lab 01** | Your first virtual machine | W2 | [`labs/lab01-first-vm/`](labs/lab01-first-vm/) | Completed |
 | **Lab 02** | A Windows guest, and a network between them | W3 | [`labs/lab02-windows-vm/`](labs/lab02-windows-vm/) | Completed |
-| **Lab 03** | Teardown, and the same machine from the command line | W4 | `labs/lab03-teardown/` | Completed |
+| **Lab 03** | Teardown, and the same machine from the command line | W4 | [`labs/lab03-teardown/`](./labs/lab03-teardown/)| Completed |
 | **Lab 04** | Partition, mirror, fail, recover | W5 | [labs/lab04-storage/](./labs/lab04-storage/) | Completed |
 | **Lab 05** | Encoding forensics | W6 | `labs/lab05-encoding/` | Planned |
 | **Lab 06** | Live processes and memory pressure | W7 | `labs/lab06-processes/` | Planned |
@@ -32,10 +32,8 @@
 
 | # | Ticket Subject & Brief | Due | Target Path | Status |
 | :---: | :--- | :---: | :--- | :---: |
-| **Ticket 1** | *"New developer starts Monday, needs a test machine"* | Week 4 | `tickets/ticket1-vm-build-doc/` | In Progress |
-| **Ticket 2** | *"We are kitting out the new office"* | Week 7 | `tickets/ticket2-office-spec/` | Planned |
+| **Ticket 1** | *"New developer starts Monday, needs a test machine"* | Week 4 | [`tickets/ticket1-vm-build-doc/`](./tickets/ticket1-vm-build-doc/) | In Progress |
+| **Ticket 2** | *"We are kitting out the new office"* | Week 7 | [`tickets/ticket2-office-spec/`](./tickets/ticket2-office-spec/) | Planned |
 | **Ticket 3** | *"The intern cannot see the shared folder"* | Week 11 | `tickets/ticket3-network-fault/` | Planned |
 | **Ticket 4** | *"HR sent a spreadsheet and it is a disaster"* | Week 15 | `tickets/ticket4-hr-csv/` | Planned |
 | **Ticket 5** | *"Three people left on Friday"* | Week 16 | `tickets/ticket5-onboarding/` | Planned |
-
----

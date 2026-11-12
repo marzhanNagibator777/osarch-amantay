@@ -15,7 +15,7 @@
 | **Lab 01** | Your first virtual machine | W2 | [`labs/lab01-first-vm/`](labs/lab01-first-vm/) | Completed |
 | **Lab 02** | A Windows guest, and a network between them | W3 | [`labs/lab02-windows-vm/`](labs/lab02-windows-vm/) | Completed |
 | **Lab 03** | Teardown, and the same machine from the command line | W4 | `labs/lab03-teardown/` | Completed |
-| **Lab 04** | Partition, mirror, fail, recover | W5 | `labs/lab04-storage/` | Completed |
+| **Lab 04** | Partition, mirror, fail, recover | W5 | [labs/lab04-storage/](./labs/lab04-storage/) | Completed |
 | **Lab 05** | Encoding forensics | W6 | `labs/lab05-encoding/` | Planned |
 | **Lab 06** | Live processes and memory pressure | W7 | `labs/lab06-processes/` | Planned |
 | **Lab 07** | CLI dojo | W9 | `labs/lab07-cli-dojo/` | Planned |

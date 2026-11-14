@@ -1,2 +1,19 @@
-# Vendor Quotes
-This folder contains vendor quotations and pricing references sourced from local suppliers in Kazakhstan (Mechta.kz) as of November 10, 2026.
+# Vendor Quotation & Pre-Built Comparison Summary (Almaty, KZ)
+
+* **Date of Price Verification:** November 14, 2026
+* **Vendors Delivering to Almaty, Kazakhstan:** Technodom (`technodom.kz`), Bely Veter (`shop.kz`)
+
+## 1. Custom Build Totals vs. Budget Cap
+| Role | Custom Build Total (KZT) | Primary Focus |
+| :--- | :---: | :--- |
+| Accountant | 357,930 | High single-thread speed + Samsung NVMe endurance |
+| Sales Manager | 428,930 | 32 GB RAM headroom for 40+ browser tabs & video calls |
+| Web Developer | 649,920 | 8-core AM5 CPU + 32 GB DDR5 + QHD coding display |
+| Designer | 1,042,910 | RTX 4060 Ti CUDA + 64 GB DDR5 + 100% sRGB ProArt monitor |
+| **Grand Total** | **2,479,690 KZT** | **520,310 KZT remaining buffer under 3,000,000 KZT limit** |
+
+## 2. Equivalent Pre-Built Vendor Pricing (Reference)
+* **Office Pre-Builts (x2 — Accountant & Sales equivalents):** Lenovo ThinkCentre / ASUS ExpertCenter (16 GB RAM, 1 TB SSD, Windows 11 Pro) + 24" Monitors = ~465,000 KZT × 2 = **930,000 KZT** (note: pre-builts at this tier rarely offer 32 GB RAM out of the box).
+* **Developer Pre-Built Equivalent:** ASUS ExpertCenter / MSI Desktop (Ryzen 7 / i7, 32 GB RAM, 1 TB SSD, Windows Pro) + 27" QHD Monitor = **~810,000 KZT**.
+* **Designer Pre-Built Equivalent:** ASUS ROG / ProArt Creator Desktop (i5-14600K / i7, 32–64 GB RAM, RTX 4060 Ti, 1 TB SSD, Windows Pro) + 27" ProArt Monitor = **~1,290,000 KZT**.
+* **Estimated Pre-Built Total:** **~3,030,000 KZT** (~22% higher than custom builds, exceeding the 3,000,000 KZT cap while offering lower PSU/motherboard upgradeability).

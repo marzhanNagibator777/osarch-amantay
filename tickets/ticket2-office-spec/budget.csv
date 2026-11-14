@@ -1,0 +1,32 @@
+role,component,model,price KZT,source,date
+accountant,CPU,Intel Core i3-14100 (UHD Graphics 730),64990,technodom.kz,2026-11-14
+accountant,Motherboard,MSI PRO H610M-E DDR4,44990,technodom.kz,2026-11-14
+accountant,RAM,Kingston FURY Beast 16GB (2x8GB) DDR4 3200MHz,27990,technodom.kz,2026-11-14
+accountant,SSD,Samsung 980 1TB M.2 NVMe,49990,technodom.kz,2026-11-14
+accountant,PSU & Case,Zalman T6 + DeepCool PF500 500W 80+,39990,shop.kz,2026-11-14
+accountant,OS,Microsoft Windows 11 Pro OEM License,69990,technodom.kz,2026-11-14
+accountant,Monitor,24" Dell SE2422H Full HD VA 75Hz,59990,technodom.kz,2026-11-14
+sales,CPU,Intel Core i5-13400 (UHD Graphics 730),98990,technodom.kz,2026-11-14
+sales,Motherboard,Gigabyte B760M DS3H DDR4,62990,technodom.kz,2026-11-14
+sales,RAM,Kingston FURY Beast 32GB (2x16GB) DDR4 3200MHz,49990,technodom.kz,2026-11-14
+sales,SSD,WD Blue SN580 1TB M.2 NVMe PCIe 4.0,42990,shop.kz,2026-11-14
+sales,PSU & Case,AeroCool CS-107 + be quiet! System Power 10 450W,44990,shop.kz,2026-11-14
+sales,OS,Microsoft Windows 11 Pro OEM License,69990,technodom.kz,2026-11-14
+sales,Monitor,24" LG 24MR400-B Full HD IPS 100Hz,58990,technodom.kz,2026-11-14
+webdev,CPU,AMD Ryzen 7 7700 (AM5 with Radeon Graphics),149990,technodom.kz,2026-11-14
+webdev,Cooler,DeepCool AG400 Air Cooler,14990,shop.kz,2026-11-14
+webdev,Motherboard,ASUS TUF GAMING B650M-PLUS DDR5,89990,technodom.kz,2026-11-14
+webdev,RAM,Kingston FURY Beast 32GB (2x16GB) DDR5 5600MHz,69990,technodom.kz,2026-11-14
+webdev,SSD,Kingston KC3000 1TB M.2 NVMe PCIe 4.0,54990,technodom.kz,2026-11-14
+webdev,PSU & Case,Cougar Duoface RGB + DeepCool PK650D 650W Bronze,64990,shop.kz,2026-11-14
+webdev,OS,Microsoft Windows 11 Pro OEM License,69990,technodom.kz,2026-11-14
+webdev,Monitor,27" Dell S2721DS QHD (2560x1440) IPS,134990,technodom.kz,2026-11-14
+designer,CPU,Intel Core i5-14600K (UHD Graphics 770),159990,technodom.kz,2026-11-14
+designer,Cooler,DeepCool AK620 Dual-Tower Cooler,32990,shop.kz,2026-11-14
+designer,Motherboard,MSI PRO B760M-A WIFI DDR5,84990,technodom.kz,2026-11-14
+designer,RAM,Kingston FURY Beast 64GB (2x32GB) DDR5 5600MHz,129990,technodom.kz,2026-11-14
+designer,SSD,Samsung 990 PRO 1TB M.2 NVMe PCIe 4.0,69990,technodom.kz,2026-11-14
+designer,GPU,ASUS Dual NVIDIA GeForce RTX 4060 Ti 8GB GDDR6,239990,technodom.kz,2026-11-14
+designer,PSU & Case,Montech AIR 100 ARGB + Chieftec Polaris 650W Gold,74990,shop.kz,2026-11-14
+designer,OS,Microsoft Windows 11 Pro OEM License,69990,technodom.kz,2026-11-14
+designer,Monitor,27" ASUS ProArt Display PA278QV QHD 100% sRGB,179990,technodom.kz,2026-11-14

@@ -34,8 +34,8 @@
    * Should the 3,000,000 KZT budget also cover keyboards, mice, and delivery?
 
 3. **What I assumed instead of an answer:**
-   * Every PC gets at least 16 GB RAM, a 1 TB NVMe SSD, licensed Windows 11 Pro, and a monitor[cite: 61].
-   * All prices were taken on **2026-11-14** from Kazakhstani stores (`technodom.kz` and `shop.kz`) that deliver to Almaty[cite: 61].
+   * Every PC gets at least 16 GB RAM, a 1 TB NVMe SSD, licensed Windows 11 Pro, and a monitor.
+   * All prices were taken on **2026-11-14** from Kazakhstani stores (`technodom.kz` and `shop.kz`) that deliver to Almaty.
    * Spending **2,479,690 KZT** leaves **520,310 KZT** in reserve for peripherals and sudden KZT price increases.
 
 ---
@@ -64,10 +64,10 @@
 
 ## 4. Evidence
 
-* [builds.md](builds.md) — Explains the workload, bottleneck, and budget trade-off for each of the four roles
-* [budget.csv](budget.csv) — Full table of components, models, prices in KZT, stores, and the date (`2026-11-14`)
-* [evidence/pcpartpicker-links.md](evidence/pcpartpicker-links.md) — Store links and basic compatibility checks for the chosen parts
-* [evidence/vendor-quotes/](evidence/vendor-quotes/) — Vendor price quotes and pre-built comparison notes from Kazakhstani stores
+* [builds.md](builds.md) — Explains the workload, bottleneck, and budget trade-off for each of the four roles.
+* [budget.csv](budget.csv) — Full table of components, models, prices in KZT, stores, and the date (`2026-11-14`).
+* [evidence/pcpartpicker-links.md](evidence/pcpartpicker-links.md) — Store links and basic compatibility checks for the chosen parts.
+* [evidence/vendor-quotes/](evidence/vendor-quotes/) — Vendor price quotes and pre-built comparison notes from Kazakhstani stores.
 
 ---
 

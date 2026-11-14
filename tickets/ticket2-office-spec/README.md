@@ -64,10 +64,10 @@
 
 ## 4. Evidence
 
-* [builds.md](builds.md) — Explains the workload, bottleneck, and budget trade-off for each of the four roles[cite: 61].
-* [budget.csv](budget.csv) — Full table of components, models, prices in KZT, stores, and the date (`2026-11-14`)[cite: 61].
-* [evidence/pcpartpicker-links.md](evidence/pcpartpicker-links.md) — Store links and basic compatibility checks for the chosen parts[cite: 61].
-* [evidence/vendor-quotes/technodom-shopkz-quotes.md](evidence/vendor-quotes/technodom-shopkz-quotes.md) — Summary of total build costs vs. pre-built store prices[cite: 61].
+* [builds.md](builds.md) — Explains the workload, bottleneck, and budget trade-off for each of the four roles
+* [budget.csv](budget.csv) — Full table of components, models, prices in KZT, stores, and the date (`2026-11-14`)
+* [evidence/pcpartpicker-links.md](evidence/pcpartpicker-links.md) — Store links and basic compatibility checks for the chosen parts
+* [evidence/vendor-quotes/](evidence/vendor-quotes/) — Vendor price quotes and pre-built comparison notes from Kazakhstani stores
 
 ---
 

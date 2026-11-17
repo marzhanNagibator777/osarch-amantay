@@ -32,8 +32,8 @@
 
 | # | Ticket Subject & Brief | Due | Target Path | Status |
 | :---: | :--- | :---: | :--- | :---: |
-| **Ticket 1** | *"New developer starts Monday, needs a test machine"* | Week 4 | [`tickets/ticket1-vm-build-doc/`](./tickets/ticket1-vm-build-doc/) | In Progress |
-| **Ticket 2** | *"We are kitting out the new office"* | Week 7 | [`tickets/ticket2-office-spec/`](./tickets/ticket2-office-spec/) | Planned |
+| **Ticket 1** | *"New developer starts Monday, needs a test machine"* | Week 4 | [`tickets/ticket1-vm-build-doc/`](./tickets/ticket1-vm-build-doc/) | Completed |
+| **Ticket 2** | *"We are kitting out the new office"* | Week 7 | [`tickets/ticket2-office-spec/`](./tickets/ticket2-office-spec/) | Completed |
 | **Ticket 3** | *"The intern cannot see the shared folder"* | Week 11 | `tickets/ticket3-network-fault/` | Planned |
 | **Ticket 4** | *"HR sent a spreadsheet and it is a disaster"* | Week 15 | `tickets/ticket4-hr-csv/` | Planned |
 | **Ticket 5** | *"Three people left on Friday"* | Week 16 | `tickets/ticket5-onboarding/` | Planned |

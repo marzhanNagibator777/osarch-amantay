@@ -1,0 +1,34 @@
+PS C:\Users\Админ> Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, VirtualizationFirmwareEnabled
+
+Name                                           NumberOfCores NumberOfLogicalProcessors VirtualizationFirmwareEnabled
+----                                           ------------- ------------------------- -----------------------------
+11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz             2                         4                         False
+
+
+PS C:\Users\Админ> Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, TotalVisibleMemorySize, FreePhysicalMemory
+
+Caption                                         Version    TotalVisibleMemorySize FreePhysicalMemory
+-------                                         -------    ---------------------- ------------------
+Майкрософт Windows 11 Домашняя для одного языка 10.0.26200                8075748            1700260
+
+
+PS C:\Users\Админ> Get-PhysicalDisk
+
+Number FriendlyName                        SerialNumber                             MediaType CanPool OperationalStatus HealthStatus Usage            Size
+------ ------------                        ------------                             --------- ------- ----------------- ------------ -----            ----
+0      NVMe WDC PC SN530 SDBPNPZ-256G-1002 E823_8FA6_BF53_0001_001B_444A_4913_00E1. SSD       False   OK                Healthy      Auto-Select 238.47 GB
+
+
+PS C:\Users\Админ> Get-Volume -DriveLetter C
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
+C           C:           NTFS           Fixed     Healthy      OK                     13.01 GB 236.93 GB
+
+
+PS C:\Users\Админ> Get-Disk
+
+Number Friendly Name                                       Serial Number                    HealthStatus         OperationalStatus      Total Size Partition
+                                                                                                                                                   Style
+------ -------------                                       -------------                    ------------         -----------------      ---------- ----------
+0      NVMe WDC PC SN530 SDBPNPZ-256G-1002                 E823_8FA6_BF53_0001_001B_444A... Healthy              Online                  238.47 GB GPT
